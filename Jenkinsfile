@@ -7,7 +7,7 @@ stages {
       stage ('SCM'){
          steps { 
            echo  "the scm job is build"
-           git 'https://github.com/jabedhasan21/java-hello-world-with-maven.git'
+           git 'https://github.com/HouariZegai/Calculator.git'
            }
 	}
 
@@ -15,7 +15,7 @@ stages {
 	
          steps { 
            echo  "the Build job"
-           sh 'mvn clean package'
+           sh 'mvn compile'         
  }
 	}
 	
@@ -25,7 +25,7 @@ stages {
 
         steps { 
            echo  "the deploy job is build"
-             
+             sh 'mvn clean package'
 
            }
       
