@@ -16,8 +16,7 @@ stages {
          steps { 
            echo  "the Build job"
            sh 'mvn compile'
-
-           }
+ }
 	}
 	
 	
