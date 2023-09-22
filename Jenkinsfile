@@ -15,7 +15,7 @@ stages {
 	
          steps { 
            echo  "the Build job"
-           sh 'mvn compile'
+           sh 'mvn clean package'
  }
 	}
 	
@@ -24,8 +24,8 @@ stages {
       stage ('Deploy'){
 
         steps { 
-           echo  "the scm job is build"
-             sh 'mvn clean package'
+           echo  "the deploy job is build"
+             
 
            }
       
