@@ -1,37 +1,36 @@
 pipeline {
 
-agent any {
+agent any 
 
 stages {
-	stage ('SCM')
-	{
+
+      stage ('SCM'){
          steps { 
            echo  "the scm job is build"
 
            }
 	}
 
-	stage ('BUILD')
-	{
+      stage ('BUILD'){
 	
-
-  steps { 
+         steps { 
            echo  "the scm job is build"
 
            }
 	}
 	
-	Stage ('Deploy')
-  	{
+	
 
-  steps { 
+      stage ('Deploy'){
+
+        steps { 
            echo  "the scm job is build"
 
            }
       
- 	} 
+          } 
 
 }
 
-}
+ 
 }
